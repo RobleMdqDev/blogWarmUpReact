@@ -19,7 +19,7 @@ const Post = ({ title, id, userId, body }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+          .delete(`https://jsonplaceholder.cypress.io/posts/${id}`, {
             headers: {
               "Content-type": "application/json; charset=UTF-8",
             },

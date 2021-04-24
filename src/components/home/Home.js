@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const getPost = async () => {
       await axios
-        .get("https://jsonplaceholder.typicode.com/posts", {
+        .get("https://jsonplaceholder.cypress.io/posts", {
           headers: { "Content-type": "application/json; charset=UTF-8" },
         })
         .then((res) => res.data)
